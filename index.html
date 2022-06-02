@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="calc">
+        <h1>CALCULADORA</h1>
+                <div id="visor">
+            <p id="result"></p>
+         </div>
+        <div> 
+            <div id="teclado">
+                <div id="linha4">
+                    <div id="bt7">
+                        <button onclick="insert('7')">7</button>
+                    </div>
+                    <div id="bt8">
+                        <button onclick="insert('8')">8</button>
+                    </div>
+                    <div id="bt9">
+                        <button onclick="insert('9')">9</button>
+                    </div>
+                    <div id="btX">
+                        <button onclick="insert('*')">&times</button>
+                    </div>
+                    <div id="btdiv">
+                        <button onclick="insert('/')">&divide</button>
+                    </div>    
+                </div>
+                <div id="linha3">
+                    <div id="bt4">
+                        <button onclick="insert('4')">4</button>
+                    </div>
+                <div id="bt5">
+                    <button onclick="insert('5')">5</button>
+                </div>
+                <div id="bt6">
+                    <button onclick="insert('6')">6</button>
+                </div>
+                <div id="bt-">
+                    <button onclick="insert('-')">-</button>
+                </div>
+                <div id="btraiz">
+                    <button>&radic;</button>
+                </div>
+                </div>
+                <div id="linha2">
+                    <div id="bt1">
+                        <button onclick="insert('1')">1</button>
+                    </div>
+                    <div id="bt2">
+                        <button onclick="insert('2')">2</button>
+                    </div>
+                    <div id="bt3">
+                        <button onclick="insert('3')">3</button>
+                    </div>
+                    <div id="btmais">
+                        <button onclick="insert('+')">+</button>
+                    </div>
+                    <div id="btperc">
+                        <button>%</button>
+                    </div>
+                </div>
+                    <div id="linha1">
+                        <div id="bt0">
+                            <button onclick="insert('0')">0</button>
+                        </div>
+                        <div id="btponto">
+                            <button onclick="insert('.')">.</button>
+                        </div>
+                        <div id="btce">
+                            <button onclick="clean()">CE</button>
+                        </div>
+                        <div id="btigual">
+                            <button onclick="calcular()">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+<script>
+    function insert(number){
+        var numero=document.getElementById('result').innerHTML;
+        document.getElementById('result').innerHTML=numero+number;
+    }
+    function clean(){
+        document.getElementById('result').innerHTML="";
+    }
+    function calcular(){
+        var resultado = document.getElementById('result').innerHTML;
+        if(resultado){
+        document.getElementById('result').innerHTML= eval(resultado);
+    }
+    }
+
+</script>
+</body>
+</html>
