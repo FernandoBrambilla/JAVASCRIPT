@@ -8,8 +8,8 @@ body{
 }
 #calc{
     background-color:rgba(0, 0, 0, 0.699);
-    width: 430px;
-    height: 450px;
+    width: 380px;
+    height: 410px;
     margin: auto;
     margin-top: 15px;
     padding: 10px;
@@ -17,20 +17,22 @@ body{
 }
 #visor{
     background-color: rgb(245, 241, 241);
-    width: 400px;
-    height:90px;
-    margin: auto;
+    width: 370pxpx;
+    height:80px;
+    
     border-radius: 3px;
     padding-right: 10px;
     box-shadow: inset 0px 0px 2px 2px rgba(116, 116, 116, 0.75);
 }
 p{
-    font-size: 80px;
+    font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     color: black;
-    width: 400px;
+    width: 360px;
+    height: 80px;
     padding-right: 10px;
+    
 }
 h1{
     color: lightgray;
@@ -47,13 +49,13 @@ h1{
     align-items: center;
 }
 #btigual button{
-    width: 157px;
+    width: 145px;
 }
 button{
-    width: 70px;
+    width: 68px;
     height: 60px;
-    margin: 8px;
-    font-size: 50px;
+    margin: 4px;
+    font-size: 43px;
     box-shadow: 2px 2px 2px rgb(37, 37, 37);
 }
 
