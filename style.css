@@ -8,7 +8,7 @@ body{
 }
 #calc{
     background-color:rgba(0, 0, 0, 0.699);
-    width: 350px;
+    width: 340px;
     height: 410px;
     margin: auto;
     margin-top: 15px;
@@ -17,7 +17,7 @@ body{
 }
 #visor{
     background-color: rgb(245, 241, 241);
-    width: 370pxpx;
+    width: 330px;
     height:80px;
     border-radius: 3px;
     padding-right: 10px;
@@ -28,9 +28,10 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     color: black;
-    width: 360px;
+    width: 330px;
     height: 80px;
     padding-right: 10px;
+    border-radius: 3px;
 }
 h1{
     color: lightgray;
@@ -39,12 +40,12 @@ h1{
     font-size: 40px;
 }
 #teclado{
-    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 #linha4, #linha3, #linha2, #linha1{
     display: flex;
-    margin:auto;
-    align-items: center;
+    
 }
 #btigual button{
     width: 128px;
@@ -58,6 +59,10 @@ button{
     margin: 4px;
     font-size: 38px;
     box-shadow: 2px 2px 2px rgb(37, 37, 37);
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(221, 218, 218);
 }
 
 
