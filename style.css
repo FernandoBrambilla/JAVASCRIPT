@@ -8,7 +8,7 @@ body{
 }
 #calc{
     background-color:rgba(0, 0, 0, 0.699);
-    width: 380px;
+    width: 350px;
     height: 410px;
     margin: auto;
     margin-top: 15px;
@@ -31,7 +31,6 @@ p{
     width: 360px;
     height: 80px;
     padding-right: 10px;
-    
 }
 h1{
     color: lightgray;
@@ -48,13 +47,16 @@ h1{
     align-items: center;
 }
 #btigual button{
-    width: 145px;
+    width: 128px;
+}
+#btce button{
+    font-size: 33px;
 }
 button{
-    width: 68px;
+    width: 60px;
     height: 60px;
     margin: 4px;
-    font-size: 43px;
+    font-size: 38px;
     box-shadow: 2px 2px 2px rgb(37, 37, 37);
 }
 

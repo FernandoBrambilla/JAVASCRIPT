@@ -47,7 +47,7 @@
                     <button onclick="insert('-')">-</button>
                 </div>
                 <div id="btraiz">
-                    <button>&radic;</button>
+                    <button onclick="raiz('')">&radic;</button>
                 </div>
                 </div>
                 <div id="linha2">
@@ -64,7 +64,7 @@
                         <button onclick="insert('+')">+</button>
                     </div>
                     <div id="btperc">
-                        <button>%</button>
+                        <button onclick="porcent('')">%</button>
                     </div>
                 </div>
                     <div id="linha1">
@@ -98,6 +98,14 @@
         if(resultado){
         document.getElementById('result').innerHTML= eval(resultado);
     }
+    }
+    function raiz(){
+        var raiz=document.getElementById('result').innerHTML;
+        document.getElementById('result').innerHTML=Math.sqrt(raiz).toFixed(5);          
+    }
+    function porcent(){
+        var porcent=document.getElementById('result').innerHTML;
+        document.getElementById('result').innerHTML=(porcent/100).toFixed(5);
     }
 
 </script>
